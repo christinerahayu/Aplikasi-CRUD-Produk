@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aplikasi CRUD Produk</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="jenis_produk">
+        <item>Baju</item>
+        <item>Celana</item>
+    </string-array>
+</resources>

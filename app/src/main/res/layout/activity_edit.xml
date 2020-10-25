@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:orientation="vertical"
+    android:background="#EFE0CD">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/ID_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Produk"
+                android:textStyle="bold"
+                android:textColor="#000000"/>/>
+            <EditText
+                android:id="@+id/KodeProduk_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Produk"
+                android:textStyle="bold"
+                android:textColor="#000000"/>/>
+            <EditText
+                android:id="@+id/NamaProduk_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Produk"
+                android:textStyle="bold"
+                android:textColor="#000000"/>/>
+            <Spinner
+                android:id="@+id/spJP_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:entries="@array/jenis_produk"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textStyle="bold"
+                android:textColor="#000000"/>/>
+            <EditText
+                android:id="@+id/Harga_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah"
+                android:textStyle="bold"
+                android:textColor="#000000"/>/>
+            <EditText
+                android:id="@+id/Jumlah_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Masuk"
+                android:textStyle="bold"
+                android:textColor="#000000"/>/>
+            <EditText
+                android:id="@+id/TglMasuk_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
